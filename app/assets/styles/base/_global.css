@@ -1,3 +1,5 @@
+/* global CSS Scope */
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -6,4 +8,13 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  box-sizing: border-box; /* broswers respect the devs % sizing */
+}
+
+
+a {
+  color: $mainOrange;
 }

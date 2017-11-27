@@ -10,8 +10,12 @@
   }
 
   &--large {
-    font-size: 1.25rem; /* 25% larger */
+    /* mobile first baseline */
     padding: 1.1rem 1.9rem;
+
+    @mixin atSmall{ /* bigger screens */
+      font-size: 1.25rem; /* 25% larger */
+    }
   }
 
 
