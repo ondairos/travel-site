@@ -9,7 +9,7 @@
   &--medium {
     max-width: 976px;
   }
-
+/*PADDING CONFIG AT MEDIUMS SCREENS */
  &--no-padding-until-medium {
    padding-left: 0;
    padding-right: 0;
@@ -20,6 +20,7 @@
    }
  }
 
+/*PADDING CONFIG AT LARGE SCREENS */
   &--no-padding-until-large {
    padding-left: 0;
    padding-right: 0;
@@ -30,6 +31,7 @@
    }
  }
 
+/*GENERAL WRAPPER */
  .wrapper {
    padding-left: 0;
    padding-right: 0;
@@ -39,6 +41,7 @@
    &--b-margin {
     margin-bottom: 2.8rem;
 
+  /*AT MEDIUM SIZES SCREENS AND LARGER */
     @mixin atSmall{
       margin-bottom: 5,875rem;      
     }

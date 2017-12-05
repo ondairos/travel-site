@@ -21,6 +21,11 @@
   }
 
 
+  &--gutters-small {
+    margin-right: -45px; /*check the design file and measure the pixels */
+  }
+
+
   &--gutters > div { /*select all direct children that use the tag of div */
     padding-right: 65px;
     
@@ -41,7 +46,7 @@
     margin-bottom: 1rem;
   }
   
-
+/*MEDIUM */
   @mixin atMedium {
 
     &__b-margin-until-medium {
