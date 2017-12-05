@@ -933,3 +933,48 @@ by gulp. Instead edit gulp/templates/sprite */
 
   }
   }
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  /* make header use the full width of the page */
+  width: 100%;
+
+  z-index: 2; /* make the header come on top of the page*/
+  background-color: rgba(47,85,114, .3);
+
+}
+.site-header__btn-container {
+    float: right;
+  }
+.site-header__logo {
+    /* take it out the natural flow of the page */
+    position: absolute;
+    top: 0;
+    background-color: #2f5572;
+    padding: 25px 36px;
+  }
+.primary-nav--pull-right {
+    float: right;
+  }
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+
+  }
+.primary-nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    padding: 12px 0;
+  }

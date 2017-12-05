@@ -1,0 +1,22 @@
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  /* make header use the full width of the page */
+  width: 100%;
+
+  z-index: 2; /* make the header come on top of the page*/
+  background-color: rgba($mainBlue, .3);
+
+  &__btn-container {
+    float: right;
+  }
+
+  &__logo {
+    /* take it out the natural flow of the page */
+    position: absolute;
+    top: 0;
+    background-color: $mainBlue;
+    padding: 25px 36px;
+  }
+
+}
