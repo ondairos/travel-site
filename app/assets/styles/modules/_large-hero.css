@@ -8,6 +8,7 @@
 
 
   &__text-content {
+    padding-top: 88px;
     /* bring the text to the center ontop of the image */
     position: absolute;
     top: 50%;
@@ -15,6 +16,10 @@
     left: 0;
     width: 100%;
     text-align: center;
+
+    @mixin atMedium {
+      padding-top: 60px; /*original padding top */
+    }
   }
   
   &__title {

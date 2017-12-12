@@ -381,6 +381,7 @@ a {
     display: block; /*change(was inline) it because of the blue gap on the bottom */
   }
 .large-hero__text-content {
+    padding-top: 88px;
     /* bring the text to the center ontop of the image */
     position: absolute;
     top: 50%;
@@ -389,6 +390,11 @@ a {
     left: 0;
     width: 100%;
     text-align: center;
+  }
+@media (min-width: 800px) {
+.large-hero__text-content {
+      padding-top: 60px /*original padding top */
+  }
   }
 .large-hero__title {
     font-weight: 300;
@@ -939,10 +945,22 @@ by gulp. Instead edit gulp/templates/sprite */
   /* make header use the full width of the page */
   width: 100%;
 
-  z-index: 2; /* make the header come on top of the page*/
-  background-color: rgba(47,85,114, .3);
+  z-index: 2;
+
+
+
 
 }
+/* make the header come on top of the page*/
+@media (min-width: 800px) {
+.site-header {
+    background-color: rgba(47,85,114, .3)
+
+
+
+
+}
+  }
 .site-header__btn-container {
     float: right;
   }
@@ -950,8 +968,53 @@ by gulp. Instead edit gulp/templates/sprite */
     /* take it out the natural flow of the page */
     position: absolute;
     top: 0;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(0.8);
+            transform: translateX(-50%) scale(0.8);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+     /* pulls it back to the left by halfwidth */
+    
     background-color: #2f5572;
     padding: 25px 36px;
+
+  }
+@media (min-width: 800px) {
+.site-header__logo {
+      left: auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+
+  }
+  }
+.site-header__logo__graphic {
+    text-indent: -9999px; /* hides the text */
+  }
+.site-header__menu-icon{
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+@media (min-width: 800px) {
+.site-header__menu-icon{
+      display: none
+  }
+  }
+.site-header__menu-content{
+    display: none;
+
+
+  }
+@media (min-width: 800px) {
+.site-header__menu-content{
+      display: block
+
+
+  }
   }
 .primary-nav--pull-right {
     float: right;
