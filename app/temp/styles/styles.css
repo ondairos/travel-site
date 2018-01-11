@@ -958,12 +958,18 @@ by gulp. Instead edit gulp/templates/sprite */
   }
 @media (min-width: 800px) {
 .site-header {
+    position: fixed;
     background-color: rgba(47,85,114, .3)
 
 
 
 
 }
+
+
+    .site-header--dark {
+      background-color: rgba(23 ,51, 72, .85);
+    }
   }
 @media (min-width: 800px) {
 .site-header__btn-container { 
@@ -979,6 +985,10 @@ by gulp. Instead edit gulp/templates/sprite */
     left: 50%;
     -webkit-transform: translateX(-50%) scale(0.8);
             transform: translateX(-50%) scale(0.8);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
      /* pulls it back to the left by halfwidth */
@@ -994,6 +1004,11 @@ by gulp. Instead edit gulp/templates/sprite */
               transform: translateX(0)
 
   }
+
+      .site-header--dark .site-header__logo {
+        -webkit-transform: scale(.56);
+                transform: scale(.56);
+      }
   }
 .site-header__logo__graphic {
     text-indent: -9999px; /* hides the text */
