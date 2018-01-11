@@ -1181,6 +1181,10 @@ by gulp. Instead edit gulp/templates/sprite */
 
 
   }
+
+      .primary-nav a.is-current-link {
+        color: #fabb69;
+      }
   }
 .reveal-item {
   opacity: 0;
